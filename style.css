@@ -1,0 +1,212 @@
+:root {
+    --secondary-bg-color: rgb(249, 250, 251);
+    --green-color: #596D48;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a:visited {
+    color: white;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(/font/Norse-Bold.otf);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+}
+
+.banner {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.logo-img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.logo-title {
+    color: white;
+    font-family: "Norse-Bold";
+    font-size: 10rem;
+    margin-left: 1rem;
+}
+
+.credits {
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary-bg-color);
+    padding: 4rem;
+}
+
+.top-container>p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: 65ch;
+    font-family: sans-serif;
+    line-height: 1.1;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.third-text {
+    margin-top: 1rem;
+}
+
+.middle-container {
+    padding: 2rem;
+    font-family: sans-serif;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 5px 5px 2px rgb(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-section {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, minmax(min-content, 0.15fr));
+    gap: 1rem;
+    column-gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    grid-column: span 2/span 2;
+    width: 100%;
+}
+
+label {
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: gray;
+}
+
+input {
+    margin-top: 0.2rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    border-color: rgb(209 213 219 / 1);
+    border-radius: .375rem;
+    border-width: 1px;
+    padding-top: .25rem;
+    padding-right: .37rem;
+    padding-bottom: .25rem;
+    padding-left: .37rem;
+    border-style: solid;
+    font-family: sans-serif;
+}
+
+.bottom-container {
+    background-color: var(--secondary-bg-color);
+    padding-left: 4rem;
+    padding-top: 2rem;
+    margin-top: 7px;
+}
+
+.createAccBtN {
+    background-color: var(--green-color);
+    border: 1px solid #335300;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: .375rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 3px ghostwhite;
+    margin-bottom: 2rem;
+}
+
+.createAccBtN:hover {
+    cursor: pointer;
+}
+
+.create-text {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.login,
+.login:visited {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: var(--green-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.is-validated input:invalid {
+    border-color: red;
+}
+
+.is-validated input:valid {
+    border-color: var(--green-color);
+}
+
+input:focus-visible {
+    outline: blue 1px solid;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.alert {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    color: red;
+}
