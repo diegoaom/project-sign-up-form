@@ -15,7 +15,7 @@ a:visited {
 
 @font-face {
     font-family: "Norse-Bold";
-    src: url(/font/Norse-Bold.otf);
+    src: url(./font/Norse-Bold.otf);
 }
 
 main {
@@ -27,7 +27,7 @@ main {
 .banner {
     display: grid;
     grid-template-rows: 2fr 1fr;
-    background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
